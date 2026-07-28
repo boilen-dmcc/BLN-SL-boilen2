@@ -18,7 +18,7 @@ export const Header = () => {
 
         <nav className="hidden items-center gap-8 lg:flex">
           {nav.map((item) => (
-            
+            <a
               key={item.label}
               href={item.href}
               className="text-sm font-semibold tracking-wide text-navy/80 transition-colors hover:text-red-600"
@@ -32,7 +32,7 @@ export const Header = () => {
           <a href="#contact" className="btn-primary hidden sm:inline-flex !px-6 !py-3">
             Contact
           </a>
-          
+          <a
             href="#contact"
             className="inline-flex items-center justify-center bg-red-600 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white sm:hidden"
           >
@@ -53,7 +53,7 @@ export const Header = () => {
         <nav className="border-t border-black/5 bg-white lg:hidden">
           <div className="home-container flex flex-col gap-1 py-3">
             {nav.map((item) => (
-              
+              <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
