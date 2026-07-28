@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "type": "module",
+  "name": "boilen-energy-dmcc",
+  "description": "Boilen Energy DMCC website (part of Al Barham Group / BLN Energy family)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/copy-spa-fallback.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.453.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "@vitejs/plugin-react": "4.3.4",
+    "tailwindcss": "3.4.16",
+    "vite": "^6.4.3"
+  }
+}

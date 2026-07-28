@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+
+  body {
+    @apply font-sans text-navy antialiased;
+  }
+}
+
+@layer components {
+  .home-container {
+    @apply mx-auto w-full max-w-layout px-6 sm:px-8 lg:px-10;
+  }
+
+  .home-section-y {
+    @apply py-16 sm:py-20 md:py-24;
+  }
+
+  .pill-badge {
+    @apply inline-flex items-center gap-2 rounded-md border border-red-600/20 bg-red-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-red-600;
+  }
+
+  .pill-badge-dark {
+    @apply inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-white;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-red-600 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-red-700;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center gap-2 border border-white/30 bg-transparent px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-white/10;
+  }
+
+  .btn-solid-white {
+    @apply inline-flex items-center justify-center gap-2 bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-navy transition-colors duration-200 hover:bg-white/90;
+  }
+
+  .tag-pill {
+    @apply rounded-md border border-navy/10 bg-navy/[0.03] px-3 py-1.5 text-xs font-medium text-navy/70;
+  }
+
+  .learn-more-link {
+    @apply inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide text-red-600;
+  }
+
+  .input-field {
+    @apply w-full rounded-md border border-navy/15 bg-navy/[0.02] px-4 py-3.5 text-base text-navy outline-none transition-colors placeholder:text-navy/35 focus:border-red-600;
+  }
+}
